@@ -35,6 +35,7 @@ const app = Vue.createApp({
       changemap: ref('Circle'),
       progress,
       startComputing,
+      logo: ref(true),
       streets: ref(true),
       compass: ref(true),
       map: ref(true),
@@ -65,6 +66,9 @@ function closeMenu() {
 }
 function restartHud() {
   $.post('https://lj-hud/restartHud');
+}
+function showBrand() {
+  $.post('https://lj-brand/showBrand');
 }
 function openMenuSounds() {
   $.post('https://lj-hud/openMenuSounds');
@@ -145,6 +149,9 @@ Open = function (data) {
 }
 $('.closeMenu').click(() => {
   closeMenu()
+});
+$('.ShowBrand').click(() => {
+  showBrand()
 });
 $('.ResetHud').click(() => {
   restartHud()
