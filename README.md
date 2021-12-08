@@ -20,6 +20,9 @@ In collaboration with [OnlyCats](https://github.com/onlycats) who helped make lj
 * [lj-hud](https://github.com/loljoshie/lj-hud) **this is only compatiable with lj-hud**
 * [lj-compass](https://github.com/loljoshie/lj-compass) **this is only compatiable with lj-compass**
 
+# Recommended 
+* [lj-brand](https://github.com/loljoshie/lj-brand) **this is only compatiable with lj-hud**
+
 # Key Features
 * Toggleable Menu Open Sound Effects
 * Toggleable Reset Hud Sound Effects
