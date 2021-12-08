@@ -35,42 +35,47 @@
                             <div class="text-caption q-mb-md">If your hud is acting up, give it a good ol' reset! Or you can do /resethud</div>
                         </div>
                         <hr>
+                        <div class="text-h6 q-mb-md">Options</div>
+                        <div class="text-check">
+                            <q-checkbox dark class="ShowBrand" label='Show Logo Enabled' v-model="logo" color="orange-3" val="1" style="display: flex;"></q-checkbox>
+                        </div>
+                        <hr>
                         <div class="text-h6 q-mb-md">Notifications</div>
                             <div class="text-check">
-                                <q-checkbox dark class="MenuSound" label='Menu Open Sound Effect Enabled' v-model="openMenuSounds" color="orange-3" val="1" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="ResetSound" label='Reset Hud Sound Effect Enabled' v-model="resetHudSounds" color="orange-3" val="2" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="CheckListSound" label='GUI Sound Effects Enabled' v-model="checklistSounds" color="orange-3" val="3" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="MapNotif" label='Map Notifications Enabled' v-model="mapNotif" color="orange-3" val="4" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="LowFuel" label='Low Fuel Alert Enabled' v-model="lowFuel" color="orange-3" val="5" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="CinematicNotif" label='Cinematic Mode Notifications Enabled' v-model="cinematicNotif" color="orange-3" val="6" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="MenuSound" label='Menu Open Sound Effect Enabled' v-model="openMenuSounds" color="orange-3" val="2" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="ResetSound" label='Reset Hud Sound Effect Enabled' v-model="resetHudSounds" color="orange-3" val="3" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="CheckListSound" label='GUI Sound Effects Enabled' v-model="checklistSounds" color="orange-3" val="4" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="MapNotif" label='Map Notifications Enabled' v-model="mapNotif" color="orange-3" val="5" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="LowFuel" label='Low Fuel Alert Enabled' v-model="lowFuel" color="orange-3" val="6" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="CinematicNotif" label='Cinematic Mode Notifications Enabled' v-model="cinematicNotif" color="orange-3" val="7" style="display: flex;"></q-checkbox>
                             </div>
                         </div>                        
                         <hr>
                         <div class="text-h6 q-mb-md">Status</div>
                             <div class="text-check">
-                                <q-checkbox dark class="Health" label='Show Health always' v-model="selection" color="orange-3" val="7" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="Armor" label='Show Armor always' v-model="selection" color="orange-3" val="8" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="Hunger" label='Show Hunger always' v-model="selection" color="orange-3" val="9" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="Thirst" label='Show Thirst always' v-model="selection" color="orange-3" val="10" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="Stress" label='Show Stress always' v-model="selection" color="orange-3" val="11" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="Oxygen" label='Show Oxygen always' v-model="selection" color="orange-3" val="12" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Health" label='Show Health always' v-model="selection" color="orange-3" val="8" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Armor" label='Show Armor always' v-model="selection" color="orange-3" val="9" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Hunger" label='Show Hunger always' v-model="selection" color="orange-3" val="10" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Thirst" label='Show Thirst always' v-model="selection" color="orange-3" val="11" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Stress" label='Show Stress always' v-model="selection" color="orange-3" val="12" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Oxygen" label='Show Oxygen always' v-model="selection" color="orange-3" val="13" style="display: flex;"></q-checkbox>
                             </div>
                         </div>
                         <hr>
                         <div class="text-h6 q-mb-md">Vehicle</div>
                             <div class="text-check">
-                                <q-checkbox dark class="HideMap" label='Minimap Enabled' v-model="map" color="orange-3" val="13" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="HideMap" label='Minimap Enabled' v-model="map" color="orange-3" val="14" style="display: flex;"></q-checkbox>
                                 <q-toggle class="MapShape" dark size="lg" icon-color="black" color="orange-3" :label="`Minimap ${changemap}`" unchecked-icon="check_box_outline_blank" false-value="Square" true-value="Circle" checked-icon="radio_button_unchecked" v-model="changemap"></q-toggle>
-                                <q-checkbox dark class="MapBorders" label='Minimap Borders Enabled' v-model="mapBorders" color="orange-3" val="14" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="Engine" label='Show Engine always' v-model="selection" color="orange-3" val="15" style="display: flex;"></q-checkbox>
-                                <q-checkbox dark class="Nitro" label='Show Nitro always' v-model="selection" color="orange-3" val="16" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="MapBorders" label='Minimap Borders Enabled' v-model="mapBorders" color="orange-3" val="15" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Engine" label='Show Engine always' v-model="selection" color="orange-3" val="16" style="display: flex;"></q-checkbox>
+                                <q-checkbox dark class="Nitro" label='Show Nitro always' v-model="selection" color="orange-3" val="17" style="display: flex;"></q-checkbox>
                             </div>
                         <hr>
                         <div class="text-h6 q-mb-md">Compass</div>
                             <div class="text-check">
                                 <q-item borderless dark tag="label" v-ripple>
                                     <q-item-section avatar>
-                                    <q-checkbox class="HideCompass"  dark v-model="compass" color="orange-3" val="17"></q-checkbox>
+                                    <q-checkbox class="HideCompass"  dark v-model="compass" color="orange-3" val="18"></q-checkbox>
                                 </q-item-section>
                                 <q-item-section>
                                     <q-item-label>Compass Enabled</q-item-label>
@@ -79,7 +84,7 @@
                             </q-item>
                                 <q-item borderless dark tag="label" v-ripple>
                                 <q-item-section avatar>
-                                    <q-checkbox class="HideStreets" dark v-model="streets" color="orange-3" val="18"></q-checkbox>
+                                    <q-checkbox class="HideStreets" dark v-model="streets" color="orange-3" val="19"></q-checkbox>
                                 </q-item-section>
                                 <q-item-section>
                                     <q-item-label>Show Street Names Enabled</q-item-label>
@@ -90,22 +95,23 @@
                         <hr>
                         <div class="text-h6 q-mb-md">Cinematic Mode</div>
                             <div class="text-check">
-                                <q-checkbox class="Cinematic" dark label='Enabled' v-model="selection" color="orange-3" val="19" style="display: flex;"></q-checkbox>
+                                <q-checkbox class="Cinematic" dark label='Enabled' v-model="selection" color="orange-3" val="20" style="display: flex;"></q-checkbox>
                             </div>
-                        <div class="q-gutter-y-md column" style="max-width: 300px">
-                        <!--<q-input dark dense color="custom" v-model="text" label="Percentage of screen">
+                        <br>
+<!--                         <div class="q-gutter-y-md column" style="max-width: 300px">
+                            <q-input dark dense color="custom" v-model="text" label="Percentage of screen">
                                 <template v-slot:prepend>
                                     <q-icon name="drag_handle"></q-icon>
                                 </template>
-                            </q-input> -->
+                            </q-input>
                         </div>
                         <br>
-                        <!--<hr>
+                        <hr>
                         <div class="text-h6 q-mb-md">Crosshair (D: cheater)</div>
                             <div class="text-check">
                                 <q-checkbox dark class="hideReticle" label='Enabled' v-model="selection" color="orange-3" val="18" style="display: flex;"></q-checkbox>
-                            </div> -->
-                        <br>
+                            </div>
+                        <br> -->
                         </q-tab-panel>
               
                         <!-- <q-tab-panel name="phone">
