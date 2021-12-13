@@ -13,9 +13,11 @@
 .q-panel>div { margin-bottom: 18%!important; }
 .q-field__control { margin-left: 2.5%!important; }
 .q-mb-md { margin-bottom: 0px!important; }
+.q-mb-md-d { padding-left: 10px!important; padding-bottom: 10px!important;}
 .q-item__section--side { padding-right: 0px!important; }
 .q-item { padding: 8px 0px!important; }
 .q-splitter--vertical>.q-splitter__separator { width: 0px!important; }
+.q-item__section--avatar { min-width: 40px!important }
 div#q-loading-bar { display: none!important; }
 ::-webkit-scrollbar { display: none!important; }
 
