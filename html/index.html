@@ -37,6 +37,15 @@
                         <hr>
                         <div class="text-h6 q-mb-md">Options</div>
                         <div class="text-check">
+                            <q-item borderless dark tag="label" v-ripple>
+                                <q-item-section avatar>
+                                <q-checkbox class="OutsideMap" dark v-model="outsidemap" color="orange-3" val="18"></q-checkbox>
+                            </q-item-section>
+                            <q-item-section>
+                                <q-item-label class="text-check">Show Minimap Only in Vehicle</q-item-label>
+                                <q-item-label caption>Disabling this will always keep your minimap on your screen</q-item-label>
+                            </q-item-section>
+                            </q-item>
                             <q-checkbox dark class="ShowBrand" label='Show Logo Enabled' v-model="logo" color="orange-3" val="1" style="display: flex;"></q-checkbox>
                         </div>
                         <hr>
@@ -64,8 +73,11 @@
                         <hr>
                         <div class="text-h6 q-mb-md">Vehicle</div>
                             <div class="text-check">
-                                <q-checkbox dark class="HideMap" label='Minimap Enabled' v-model="map" color="orange-3" val="14" style="display: flex;"></q-checkbox>
+                                <q-toggle class="FpsChange" dark size="lg" icon-color="black" color="orange-3" :label="`Speedometer FPS ${changefps}`" unchecked-icon="60fps" false-value="Synced" true-value="Optimized" checked-icon="30fps" v-model="changefps"></q-toggle>
+                                <div class="text-caption q-mb-md-d">Synced FPS option will result in less optimization, but keep your speedometer in real time, however, it will also be more demanding on your machine.</div>
                                 <q-toggle class="MapShape" dark size="lg" icon-color="black" color="orange-3" :label="`Minimap ${changemap}`" unchecked-icon="check_box_outline_blank" false-value="Square" true-value="Circle" checked-icon="radio_button_unchecked" v-model="changemap"></q-toggle>
+                                <div class="text-caption q-mb-md-d">Whether it's square or circle you desire, you have that ability to choose!</div>
+                                <q-checkbox dark class="HideMap" label='Minimap Enabled' v-model="map" color="orange-3" val="14" style="display: flex;"></q-checkbox>
                                 <q-checkbox dark class="MapBorders" label='Minimap Borders Enabled' v-model="mapBorders" color="orange-3" val="15" style="display: flex;"></q-checkbox>
                                 <q-checkbox dark class="Engine" label='Show Engine always' v-model="selection" color="orange-3" val="16" style="display: flex;"></q-checkbox>
                                 <q-checkbox dark class="Nitro" label='Show Nitro always' v-model="selection" color="orange-3" val="17" style="display: flex;"></q-checkbox>
@@ -78,7 +90,7 @@
                                     <q-checkbox class="HideCompass"  dark v-model="compass" color="orange-3" val="18"></q-checkbox>
                                 </q-item-section>
                                 <q-item-section>
-                                    <q-item-label>Compass Enabled</q-item-label>
+                                    <q-item-label class="text-check">Compass Enabled</q-item-label>
                                     <q-item-label caption>Disabling the compass enitrely can vastly improve performace</q-item-label>
                                 </q-item-section>
                             </q-item>
@@ -87,7 +99,7 @@
                                     <q-checkbox class="HideStreets" dark v-model="streets" color="orange-3" val="19"></q-checkbox>
                                 </q-item-section>
                                 <q-item-section>
-                                    <q-item-label>Show Street Names Enabled</q-item-label>
+                                    <q-item-label class="text-check">Show Street Names Enabled</q-item-label>
                                     <q-item-label caption>Disabling this can help improve performace</q-item-label>
                                 </q-item-section>
                             </q-item>
