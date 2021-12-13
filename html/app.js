@@ -33,8 +33,10 @@ const app = Vue.createApp({
       splitterModel: ref(20),
       selection: ref([]),
       changemap: ref('Circle'),
+      changefps: ref('Optimized'),
       progress,
       startComputing,
+      outsidemap: ref(true),
       logo: ref(true),
       streets: ref(true),
       compass: ref(true),
@@ -66,6 +68,9 @@ function closeMenu() {
 }
 function restartHud() {
   $.post('https://lj-hud/restartHud');
+}
+function showOutMap() {
+  $.post('https://lj-hud/showOutMap');
 }
 function showBrand() {
   $.post('https://lj-brand/showBrand');
@@ -115,6 +120,9 @@ function dynamicNitro() {
 function ToggleMapShape() {
   $.post('https://lj-hud/ToggleMapShape');
 }
+function changeFPS() {
+  $.post('https://lj-hud/changeFPS');
+}
 function ToggleMapBorders() {
   $.post('https://lj-hud/ToggleMapBorders');
 }
@@ -149,6 +157,9 @@ Open = function (data) {
 }
 $('.closeMenu').click(() => {
   closeMenu()
+});
+$('.OutsideMap').click(() => {
+  showOutMap()
 });
 $('.ShowBrand').click(() => {
   showBrand()
@@ -197,6 +208,9 @@ $('.Engine').click(() => {
 });
 $('.Nitro').click(() => {
   dynamicNitro()
+});
+$('.FpsChange').click(() => {
+  changeFPS()
 });
 $('.MapShape').click(() => {
   ToggleMapShape()
