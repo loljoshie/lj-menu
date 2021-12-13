@@ -14,7 +14,7 @@ Runs at ~ 0.0
 In collaboration with [OnlyCats](https://github.com/onlycats) who helped make lj-menu
 
 # Installation
-* **IMPORTANT: Make sure if you disconnect from being AFK too long or disconnect in general, that you FULLY CLOSE and reopen FiveM."**
+* **IMPORTANT: Make sure if you disconnect from being AFK too long or disconnect in general, that you FULLY CLOSE and reopen FiveM.**
 
 # Dependencies
 * [lj-hud](https://github.com/loljoshie/lj-hud) **this is only compatiable with lj-hud**
@@ -24,6 +24,8 @@ In collaboration with [OnlyCats](https://github.com/onlycats) who helped make lj
 * [lj-brand](https://github.com/loljoshie/lj-brand) **this is only compatiable with lj-hud**
 
 # Key Features
+* Speedometer FPS
+* Show Minimap while not in vehicle
 * Toggleable Menu Open Sound Effects
 * Toggleable Reset Hud Sound Effects
 * Toggleable GUI Sound Effects
@@ -55,6 +57,11 @@ https://user-images.githubusercontent.com/91661118/144964317-8d0ed99f-9e68-419c-
 ![lj-menu](https://user-images.githubusercontent.com/91661118/144963293-e61997d3-2382-4e2d-a71e-d4013a871e1d.PNG)
 
 # Change Logs
+
+### 1.1
+* Minor CSS and HTML changes
+* Added speedometer FPS
+* Added minimap outside vehicle 
 
 ### 1.0
 * Initial release
