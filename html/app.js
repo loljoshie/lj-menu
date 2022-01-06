@@ -49,8 +49,105 @@ const app = Vue.createApp({
       lowFuel: ref(true),
       cinematicNotif: ref(true),
     }
-    
-  }
+  },
+  methods: {
+    restartHud: function(event) {
+      targetId = event.currentTarget.id;
+      restartHud()
+    },
+    showOutMap: function(event) {
+      targetId = event.currentTarget.id;
+      showOutMap()
+    },
+    showBrand: function(event) {
+      targetId = event.currentTarget.id;
+      showBrand()
+    },
+    openmenusounds: function(event) {
+      targetId = event.currentTarget.id;
+      openMenuSounds()
+    },
+    resetsounds: function(event) {
+      targetId = event.currentTarget.id;
+      resetHudSounds()
+    },
+    listsounds: function(event) {
+      targetId = event.currentTarget.id;
+      checklistSounds()
+    },
+    mapnotif: function(event) {
+      targetId = event.currentTarget.id;
+      showMapNotif()
+    },
+    lowfuel: function(event) {
+      targetId = event.currentTarget.id;
+      showFuelAlert()
+    },
+    cinematicnotif: function(event) {
+      targetId = event.currentTarget.id;
+      showCinematicNotif()
+    },
+    dynamicHealth: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicHealth()
+    },
+    dynamicArmor: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicArmor()
+    },
+    dynamicHunger: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicHunger()
+    },
+    dynamicThirst: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicThirst()
+    },
+    dynamicStress: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicStress()
+    },
+    dynamicOxygen: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicOxygen()
+    },
+    changeFPS: function(event) {
+      targetId = event.currentTarget.id;
+      changeFPS()
+    },
+    ToggleMapShape: function(event) {
+      targetId = event.currentTarget.id;
+      ToggleMapShape()
+    },
+    HideMap: function(event) {
+      targetId = event.currentTarget.id;
+      HideMap()
+    },
+    ToggleMapBorders: function(event) {
+      targetId = event.currentTarget.id;
+      ToggleMapBorders()
+    },
+    dynamicEngine: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicEngine()
+    },
+    dynamicNitro: function(event) {
+      targetId = event.currentTarget.id;
+      dynamicNitro()
+    },
+    HideCompass: function(event) {
+      targetId = event.currentTarget.id;
+      HideCompass()
+    },
+    HideStreets: function(event) {
+      targetId = event.currentTarget.id;
+      HideStreets()
+    },
+    cinematicMode: function(event) {
+      targetId = event.currentTarget.id;
+      cinematicMode()
+    },
+  },
 })
 
 app.use(Quasar, { config: {} })
@@ -157,79 +254,4 @@ Open = function (data) {
 }
 $('.closeMenu').click(() => {
   closeMenu()
-});
-$('.OutsideMap').click(() => {
-  showOutMap()
-});
-$('.ShowBrand').click(() => {
-  showBrand()
-});
-$('.ResetHud').click(() => {
-  restartHud()
-});
-$('.MenuSound').click(() => {
-  openMenuSounds()
-});
-$('.ResetSound').click(() => {
-  resetHudSounds()
-});
-$('.CheckListSound').click(() => {
-  checklistSounds()
-});
-$('.MapNotif').click(() => {
-  showMapNotif()
-});
-$('.LowFuel').click(() => {
-  showFuelAlert()
-});
-$('.CinematicNotif').click(() => {
-  showCinematicNotif()
-});
-$('.Health').click(() => {
-  dynamicHealth()
-});
-$('.Armor').click(() => {
-  dynamicArmor()
-});
-$('.Hunger').click(() => {
-  dynamicHunger()
-});
-$('.Thirst').click(() => {
-  dynamicThirst()
-});
-$('.Stress').click(() => {
-  dynamicStress()
-});
-$('.Oxygen').click(() => {
-  dynamicOxygen()
-});
-$('.Engine').click(() => {
-  dynamicEngine()
-});
-$('.Nitro').click(() => {
-  dynamicNitro()
-});
-$('.FpsChange').click(() => {
-  changeFPS()
-});
-$('.MapShape').click(() => {
-  ToggleMapShape()
-});
-$('.MapBorders').click(() => {
-  ToggleMapBorders()
-});
-$('.HideMap').click(() => {
-  HideMap()
-});
-$('.HideCompass').click(() => {
-  HideCompass()
-});
-$('.HideStreets').click(() => {
-  HideStreets()
-});
-$('.Cinematic').click(() => {
-  cinematicMode()
-});
-$('.HideReticle').click(() => {
-  hideReticle()
 });
